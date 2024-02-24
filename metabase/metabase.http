@@ -1,0 +1,11 @@
+### auth
+POST {{host}}/api/session
+Content-Type: application/json
+
+{
+  "username": "{{username}}",
+  "password": "{{password}}"
+}
+
+### metabase settings
+GET {{host}}/api/setting
