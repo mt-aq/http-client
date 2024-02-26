@@ -1,11 +1,11 @@
 ### auth
-POST {{host}}/api/session
+POST {{metabase.host}}/api/session
 Content-Type: application/json
 
 {
-  "username": "{{username}}",
-  "password": "{{password}}"
+  "username": "{{metabase.username}}",
+  "password": "{{metabase.password}}"
 }
 
 ### metabase settings
-GET {{host}}/api/setting
+GET {{metabase.host}}/api/setting
