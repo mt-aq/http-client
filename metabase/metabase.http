@@ -9,3 +9,18 @@ Content-Type: application/json
 
 ### metabase settings
 GET {{METABASE_HOST}}/api/setting
+
+
+### metabase groups
+GET {{METABASE_HOST}}/api/permissions/group
+
+### metabase get group
+GET {{METABASE_HOST}}/api/permissions/group/:id
+
+### update metabase group name
+PUT {{METABASE_HOST}}/api/permissions/group/:id
+Content-Type: application/json
+
+{
+  "name": "some name"
+}
