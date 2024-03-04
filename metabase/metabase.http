@@ -14,11 +14,13 @@ GET {{METABASE_HOST}}/api/setting
 ### metabase groups
 GET {{METABASE_HOST}}/api/permissions/group
 
+
 ### metabase get group
-GET {{METABASE_HOST}}/api/permissions/group/:id
+@groupId = 1
+GET {{METABASE_HOST}}/api/permissions/group/{{groupId}}
 
 ### update metabase group name
-PUT {{METABASE_HOST}}/api/permissions/group/:id
+PUT {{METABASE_HOST}}/api/permissions/group/{{groupId}}
 Content-Type: application/json
 
 {
