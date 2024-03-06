@@ -26,3 +26,12 @@ Content-Type: application/json
 {
   "name": "some name"
 }
+
+
+### metabase get card
+@cardId = 151
+GET {{METABASE_HOST}}/api/card/{{cardId}}
+
+### metabase get dashboard
+@dashboardId = 41
+GET {{METABASE_HOST}}/api/dashboard/{{dashboardId}}
