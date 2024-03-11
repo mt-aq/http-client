@@ -29,9 +29,23 @@ Content-Type: application/json
 
 
 ### metabase get card
-@cardId = 151
+@cardId = 1
 GET {{METABASE_HOST}}/api/card/{{cardId}}
 
 ### metabase get dashboard
-@dashboardId = 41
+@dashboardId = 1
 GET {{METABASE_HOST}}/api/dashboard/{{dashboardId}}
+
+### metabase get dashboard
+@queryId = 1
+GET {{METABASE_HOST}}/api/query/{{queryId}}
+
+
+
+### metabase get user
+@userId = 1
+GET {{METABASE_HOST}}/api/user/{{userId}}
+
+### metabase get field
+@fieldId = 1
+GET {{METABASE_HOST}}/api/field/{{fieldId}}
