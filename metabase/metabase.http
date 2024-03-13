@@ -29,7 +29,7 @@ Content-Type: application/json
 
 
 ### metabase get card
-@cardId = 1
+@cardId = 385
 GET {{METABASE_HOST}}/api/card/{{cardId}}
 
 ### metabase get dashboard
@@ -43,9 +43,14 @@ GET {{METABASE_HOST}}/api/query/{{queryId}}
 
 
 ### metabase get user
-@userId = 1
+@userId = 24
 GET {{METABASE_HOST}}/api/user/{{userId}}
 
 ### metabase get field
-@fieldId = 1
+@fieldId = 1556
 GET {{METABASE_HOST}}/api/field/{{fieldId}}
+
+$Gbz
+H&yh
+&#Hc
+9qJq
