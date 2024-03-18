@@ -29,11 +29,15 @@ Content-Type: application/json
 
 
 ### metabase get card
-@cardId = 385
+@databaseId = 2
+GET {{METABASE_HOST}}/api/database/{{databaseId}}
+
+### metabase get card
+@cardId = 141
 GET {{METABASE_HOST}}/api/card/{{cardId}}
 
 ### metabase get dashboard
-@dashboardId = 1
+@dashboardId = 27
 GET {{METABASE_HOST}}/api/dashboard/{{dashboardId}}
 
 ### metabase get dashboard
@@ -43,14 +47,13 @@ GET {{METABASE_HOST}}/api/query/{{queryId}}
 
 
 ### metabase get user
-@userId = 24
+@userId = 4
 GET {{METABASE_HOST}}/api/user/{{userId}}
 
 ### metabase get field
-@fieldId = 1556
+@fieldId = 585
 GET {{METABASE_HOST}}/api/field/{{fieldId}}
 
-$Gbz
-H&yh
-&#Hc
-9qJq
+### metabase get field
+@tableId = 24
+GET {{METABASE_HOST}}/api/table/{{tableId}}
