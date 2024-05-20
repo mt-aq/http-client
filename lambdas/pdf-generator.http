@@ -1,0 +1,13 @@
+### Generate PDF
+@lambdaId = lAmBDaId
+@url = https://www.example.com
+@requestKey = some key
+@filename = some filename
+@orgId = some-uuid
+@reportType = baselineReports
+https://{{lambdaId}}.execute-api.eu-west-1.amazonaws.com/default/pdf?
+    url={{url}}&
+    requestKey={{requestKey}}&
+    filename={{filename}}&
+    orgId={{orgId}}&
+    reportType={{reportType}}
