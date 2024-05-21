@@ -1,3 +1,21 @@
+### setup
+GET {{METABASE_HOST}}/api/session/properties
+
+### Something
+POST {{METABASE_HOST}}/api/setup
+Content-Type: application/json
+
+{
+  "user": {
+    "email": "michael+metabase@altruistiq.com",
+    "password": "adsajdn890s(U )IJOLkj9"
+  },
+  "prefs": {
+    "site_name": "Altruistiq Metabase - Staging",
+    "allow_tracking": false
+  }
+}
+
 ### auth
 POST {{METABASE_HOST}}/api/session
 Content-Type: application/json
@@ -9,11 +27,11 @@ Content-Type: application/json
 
 ### metabase settings
 GET {{METABASE_HOST}}/api/setting
-
+x-api-key: {{API_KEY}}
 
 ### metabase groups
 GET {{METABASE_HOST}}/api/permissions/group
-
+x-api-key: {{API_KEY}}
 
 ### metabase get group
 @groupId = 1
