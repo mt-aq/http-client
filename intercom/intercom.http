@@ -1,0 +1,43 @@
+### create ticket
+POST {{INTERCOM_HOST}}/tickets
+Authorization:Bearer {{INTERCOM_TOKEN}}
+Content-Type: application/json
+
+{
+  "contacts": [
+    {
+      "email": "michael@altruistiq.com"
+    }
+  ],
+  "ticket_type_id": "1",
+  "ticket_attributes": {
+    "_default_title_": "Data set deletion request - ORG NAME",
+    "_default_description_": "User has requested a data set be deleted",
+    "Data source name": "Example data source name",
+    "Data source ID": "17be36d4-f17f-4bc0-b692-97a997a0e6df",
+    "Data set filename": "Example data set name",
+    "Data set ID": "8572ea20-eb5b-46c2-9ebd-bb43efa5e867"
+  }
+}
+
+### GET tickets
+GET {{INTERCOM_HOST}}/tickets
+Authorization: Bearer {{INTERCOM_TOKEN}}
+
+
+### GET ticket types
+GET {{INTERCOM_HOST}}/ticket_types
+Authorization: Bearer {{INTERCOM_TOKEN}}
+
+### Create ticket type
+POST {{INTERCOM_HOST}}/ticket_types
+Authorization: Bearer {{INTERCOM_TOKEN}}
+Content-Type: application/json
+
+{
+"name": "Data set deletion request",
+"description": "Data set deletion request",
+"icon": "🎟️",
+"category": "Customer"
+}
+
